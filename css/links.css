@@ -1,0 +1,53 @@
+.example {
+  position: absolute;
+  z-index: 100;
+  background: #e36d31;
+  border-radius: 40px;
+  color: #290104;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-indent: -50px;
+  overflow: hidden;
+  transition: width .15s,margin-left .15s,text-indent .35s;
+  -webkit-transition: width .15s,margin-left .15s,text-indent .35s;
+  -moz-transition: .15s width,.15s margin-left,.35s text-indent;
+  -o-transition: .15s width,.15s margin-left,.35s text-indent;
+}
+.example:hover {
+  width: 180px;
+  text-indent: 0;
+  text-align: center;
+  line-height: 2.2em;
+}
+.example:before {
+  display: block;
+  width: 2px;
+  height: 16px;
+  background: #fff;
+  position: absolute;
+  right: 19px;
+  top: 20px;
+  margin-left: 0;
+  margin-top: -8px;
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: .4s all;
+  -o-transition: .4s all;
+}
+#link1.example {
+  top: 20%;
+  left: 20%;
+}
+#link2.example {
+  top: 40%;
+  left: 40%;
+}
+#link3.example {
+  top: 20%;
+  left: 60%;
+}
+#link4.example {
+  top: 40%;
+  left: 80%;
+}
