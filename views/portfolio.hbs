@@ -1,0 +1,86 @@
+{{> header}}
+    <div class="container-fluid">
+      <div class="row">
+
+        <!-- Detail page -->
+        <div class="m-scene" id="main">
+        <div class="m-right-panel m-page scene_element scene_element--fadeinright">
+
+
+            <div class="menu">
+              {{> navigation }}
+            </div>
+
+            <a href="/" id="logo-link"><img src="/assets/icons/logo.png" alt="logo" class="logo center-block"/></a>
+
+              <div class="row no-gutter landing-banner">
+                <div class="col-md-12">
+                  <img src="/assets/banners/{{ img }}"  alt="nova"/>
+                  <a id="goHome" class="btn btn-portfolio" href="/" style="position:absolute;bottom:10%;left:50%;transform: translate(-50%, 0);">&larr; Back to Home</a>
+                </div>
+              </div>
+
+            <div class="portfolio-container">
+              <div class="row">
+                <div class="col-md-4">
+                  <h2>{{pageTitle}}</h2>
+                  {{{ projectDescription }}}
+                  {{#if link}}
+                    <a class="btn-portfolio text-center" href="{{link}}" role="button" target="_blank">Visit Website</a>
+                  {{/if}}
+                </div>
+
+                <div class="col-md-8 text-center">
+                  {{#if icons}}
+                    <h3 class="tech">Technologies Used</h3>
+                  {{/if}}
+
+                  {{#if icons}}
+                    <ul class="tech-icons">
+                      {{#each icons}}
+                        <li><img src="{{icon}}"/></li>
+                      {{/each}}
+                    </ul>
+                  {{/if}}
+                  <div class="desktop-img">
+                    <img src="/assets/desktop/{{desktopImg}}"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h2>What I did</h2>
+                  {{{ whatIDid }}}
+                </div>
+
+                <div class="col-sm-6 col-md-6">
+                  <div class="row mobile-container">
+                    <div class="col-xs-6 col-md-6">
+                      {{#if mobileImg}}
+                        <img src="/assets/mobile/{{mobileImg}}">
+                      {{/if}}
+                    </div>
+                    <div class="col-xs-6 col-md-6">
+                      {{#if mobileImg}}
+                        <img src="/assets/mobile/{{mobileImg2}}">
+                      {{/if}}
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <a class="btn btn-portfolio" href="/">&larr; Back to Home</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      </div>
+{{> footer}}
